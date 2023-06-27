@@ -32,3 +32,9 @@ $.getJSON("https://omdbapi.com?t=titanic").then(function(response){
     console.log(response);
 });
 
+/* $.post
+If we want to make a POST request to a server (e.g. if we want to send data to it), we can either change the method with .ajax or 
+use .post. The second parameter is the data we want to send to a server.*/
+$.post("https://someapi.com", {name: "new user"}).then(function(response){
+    console.log(response);
+});
