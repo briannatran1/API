@@ -20,3 +20,8 @@ $.ajax({
     console.log(error);
 })
 
+/* $.get
+This is simply just a shorthand for what we saw above, but without the dataType: json.*/
+$.get("https://omdbapi.com?t=titanic").then(function(response){
+    console.log(response);
+});
