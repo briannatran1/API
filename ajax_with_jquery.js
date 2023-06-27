@@ -25,3 +25,10 @@ This is simply just a shorthand for what we saw above, but without the dataType:
 $.get("https://omdbapi.com?t=titanic").then(function(response){
     console.log(response);
 });
+
+/* $.getJSON
+This is simply just a shorthand for what we saw above, but with the dataType: json.*/
+$.getJSON("https://omdbapi.com?t=titanic").then(function(response){
+    console.log(response);
+});
+
