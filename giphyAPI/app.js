@@ -22,8 +22,12 @@ $(function(){
                     src: res.data[randomIdx].images.original.url,
                     class: 'w-100'
                 });
-
+                $newCol.append($newGif);
+                $gifArea.append($newCol);
             }
-        })
-    })
+        });
+    });
+    $('#remove').on('click', function(){
+        $gifArea.empty();
+    });
 });
